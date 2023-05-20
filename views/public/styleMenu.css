@@ -1,0 +1,215 @@
+/* -----------------------------------------------------ESTILOS GERAIS DA PÁGINA--------------------------------------------- */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+*::selection{
+    color: black;
+    background-color: white;   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+
+
+body{
+    background-color: #2e2e2e;
+}
+
+
+h2{
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    
+}
+
+a:visited{
+    color: white;
+}
+/* -------------------------------------------FIM ESTILOS GERAIS DA PÁGINA--------------------------------------------- */
+/* ---------------------------------------------COMEÇO ESTILO MENU-------------------------------------------------- */
+
+.logoPicture a img{
+    display: block;
+    height: 50px;
+    width: 60px;
+}
+
+.logoText{
+    font-size: 14px;
+}
+
+.logoText h2>a{
+    color: white;
+    
+}
+
+
+
+.containerLogo{
+
+    display: flex;
+    align-items: center; 
+    width: max-content; 
+
+}
+
+
+
+.menuList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: bold;
+    
+}
+
+li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.menuList li:nth-child(1)::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #04278a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(1):hover::after{
+    width: 100%;
+}
+
+.firstChild:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #506fc6;
+
+}
+
+.menuList li:nth-child(2)::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #b73232;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(2):hover::after{
+    width: 100%;
+}
+
+.secondChild:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #d55f5f;
+
+}
+
+.menuList li:nth-child(3)::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #5c5c5c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(3):hover::after{
+    width: 100%;
+}
+
+.thirdChild:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #838383;
+
+}
+
+
+
+/* #838383 */
+
+.menuList li:nth-child(4)::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(4):hover::after{
+    width: 100%;
+}
+
+.menuList li:nth-child(5)::after{
+
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(129, 45, 238);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(5):hover::after{
+    width: 100%;
+}
+
+.lastChild:hover{
+
+    color: rgb(149, 89, 228);
+    transition: 0.2s ease-in-out;
+} 
+
+
+
+.menuList li>a{
+
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 10px 15px 40px;
+    background-color: black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: fixed;
+    
+
+}
+
+header{
+    position: absolute;
+    z-index: 2;
+}
+/* -------------------------------------------FIM ESTILO MENU---------------------------------------------------------- */
